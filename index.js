@@ -38,8 +38,9 @@ function findLargest(numbers) {
  */
 function isPalindrome(str) {
   // TODO: Implement this function.
- const reversed = str.split('').reverse().join('')
-  return str.toLowerCase() === reversed
+  const lower = str.toLowerCase();
+  const reversed = lower.split('').reverse().join('');
+  return lower === reversed;
 }
 
 /**
