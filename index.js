@@ -23,11 +23,12 @@ function reverseString(str) {
  */
 function findLargest(numbers) {
   // TODO: Implement this function.
-  if (numbers.lenght === 0){
-    return null
+  if (numbers.length === 0) {
+    return null;
   }
-  return Math.max(...numbers)
+  return Math.max(...numbers);
 }
+
 
 /**
  * @param {string} str The string to check.
@@ -37,8 +38,8 @@ function findLargest(numbers) {
  */
 function isPalindrome(str) {
   // TODO: Implement this function.
-  const reversed = str.split('').reverse().join('')
-  return str === reversed
+ const reversed = str.split('').reverse().join('')
+  return str.toLowerCase() === reversed
 }
 
 /**
